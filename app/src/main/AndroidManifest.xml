@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.medireminder">
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/Theme.MediReminder">
+
+        <activity android:name=".HomeActivity"/>
+        <activity android:name=".AddMedicineActivity"/>
+
+        <!-- Register Screen -->
+        <activity android:name=".RegisterActivity"/>
+
+        <!-- Login Screen (Launcher) -->
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ✅ ADD THESE TWO BELOW -->
+        <activity android:name=".ReportsActivity" />
+        <receiver android:name=".ReminderReceiver" />
+
+    </application>
+
+</manifest>
